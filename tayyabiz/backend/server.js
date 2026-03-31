@@ -28,6 +28,10 @@ const Product = mongoose.model('Product', productSchema);
 
 // --- ROUTES ---
 
+app.get('/', (req, res) => {
+    res.send("Lumière Server is Running Successfully!");
+});
+
 // 1. Get all products (Menu ke liye)
 app.get('/api/products', async (req, res) => {
     const products = await Product.find();

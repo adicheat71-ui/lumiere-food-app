@@ -1,5 +1,5 @@
 // frontend/js/api.js
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://animated-acorn-697wrq949gwp2xrr7-5000.app.github.dev/";
 
 // Fetching products for menu.html
 async function fetchProducts() {
