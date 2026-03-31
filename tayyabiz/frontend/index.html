@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIÈRE | Premium Food Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="accent-text">LUMI</span>ÈRE
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="search-box">
+                <i data-lucide="search"></i>
+                <input type="text" placeholder="Search cravings...">
+            </div>
+            <a href="cart.html" class="cart-icon">
+                <i data-lucide="shopping-bag"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <a href="login.html" class="btn-login">Login</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">✨ New in Town</span>
+            <h1>Crave it. <br> <span class="accent-text">Click it.</span> <br> Savour it.</h1>
+            <p>Experience the finest cuisines from top-rated chefs, delivered to your doorstep with elite precision.</p>
+            <div class="hero-btns">
+                <a href="menu.html" class="btn-primary">Explore Menu</a>
+                <a href="#how-it-works" class="btn-secondary">How it works</a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <strong>50k+</strong>
+                    <span>Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <strong>120+</strong>
+                    <span>Premium Chefs</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-glow"></div>
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Premium Pizza">
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2 class="section-title">Popular <span class="accent-text">Categories</span></h2>
+        <div class="category-grid">
+            <div class="cat-card">
+                <i data-lucide="pizza"></i>
+                <span>Pizza</span>
+            </div>
+            <div class="cat-card">
+                <i data-lucide="utensils"></i>
+                <span>Biryani</span>
+            </div>
+            <div class="cat-card">
+                <i data-lucide="sandwich"></i>
+                <span>Burgers</span>
+            </div>
+            <div class="cat-card">
+                <i data-lucide="ice-cream"></i>
+                <span>Desserts</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="section-header">
+            <h2>Chef's Special</h2>
+            <a href="menu.html">View All</a>
+        </div>
+        <div class="food-grid" id="featured-items">
+            <div class="loading-skeleton"></div>
+            <div class="loading-skeleton"></div>
+            <div class="loading-skeleton"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo"><span class="accent-text">LUMI</span>ÈRE</span>
+                <p>The gold standard of food delivery.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Lumière Premium. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+        
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.style.background = "rgba(15, 15, 15, 0.95)";
+                nav.style.padding = "1rem 5%";
+            } else {
+                nav.style.background = "rgba(15, 15, 15, 0.8)";
+                nav.style.padding = "1.5rem 5%";
+            }
+        });
+    </script>
+</body>
+</html>
